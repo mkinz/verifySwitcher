@@ -5,10 +5,7 @@ class Copier:
 
     def copy_prod_machine_files_to_verify(self):
         try:
-            copyfile('/apps/fractureResources/machineFiles/sfc9mhbp02.prod', '/apps/fractureResources/machineFiles/sfc9mhbp02.vrfy')
-            copyfile('/apps/fractureResources/machineFiles/sfc9mhtvp01.prod', '/apps/fractureResources/machineFiles/sfc9mhtvp01.vrfy')
-            copyfile('/apps/fractureResources/machineFiles/sfc9mhtvp02.prod', '/apps/fractureResources/machineFiles/sfc9mhtvp02.vrfy')
-            copyfile('/apps/fractureResources/machineFiles/sfc9mhlsfmp01.prod', '/apps/fractureResources/machineFiles/sfc9mhlsfmp01.vrfy')
+            copyfile('/apps/test1.prod', '/apps/test1.vrfy')
         except PermissionError:
             print(f'a machine file cannot be written, do you have write permissions?')
             sys.exit(0)
