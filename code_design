@@ -1,0 +1,18 @@
+Problem statement: changing verification config files from synopsis to mentor requires manual file edits
+Proposal: automated switcher app
+
+As a person doing verifications, I want to be able to auto switch config files from synopsis to mentor
+
+code design:
+-from the command line, launch app with flag for a vendor
+-old config files deleted from current working directory
+-new config files written to current directory with correct pptypes
+-machine files from prod should be synced to vrfy, for example:
+--cp /apps/fractureResources/machineFiles/sfc9mhtvp01.prod  -> /apps/fractureResources/machineFiles/sfc9mhtvp01.vrfy
+
+
+required classes:
+-input getter
+-file writer
+-file copier
+-file deleter
