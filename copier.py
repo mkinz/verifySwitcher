@@ -5,7 +5,7 @@ class Copier:
 
     def copy_prod_machine_files_to_verify(self):
         try:
-            copyfile('/apps/test1.prod', '/apps/test1.vrfy')
+            copyfile('path A', 'path B')
         except PermissionError:
             print(f'a machine file cannot be written, do you have write permissions?')
             sys.exit(0)
